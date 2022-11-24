@@ -1,2 +1,2 @@
 # Julio-Souza
-Meu próprio portfólio...
+Meu próprio portfólio
