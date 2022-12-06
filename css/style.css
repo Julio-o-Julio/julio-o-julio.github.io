@@ -7,11 +7,7 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
-html, body {
-=======
 body {
->>>>>>> Desenvolvimento
     overflow-x: hidden;
 }
 
@@ -80,8 +76,6 @@ main {
     height: 92vh;
 }
 
-<<<<<<< HEAD
-=======
 section.principal {
     width: 100vw;
     height: 92vh;
@@ -114,7 +108,6 @@ section.entre-em-contato {
     background: rgba(255, 0, 255, 0.2);
 }
 
->>>>>>> Desenvolvimento
 @media (max-width: 600px) {
     .nav-list {
         position: absolute;
