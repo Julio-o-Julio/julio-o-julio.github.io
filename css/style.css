@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -109,7 +110,7 @@ section.entre-em-contato {
 }
 
 @media (max-width: 600px) {
-    .nav-list {
+    ul.nav-list {
         position: absolute;
         top: 8vh;
         border-radius: 0 0 0 20px;
@@ -124,25 +125,22 @@ section.entre-em-contato {
         transition: transform 0.5s ease-out;
     }
 
-    .nav-list::before {
+    ul.nav-list::before {
         content: "";
         top: 0;
-        left: -20px;
+        left: -23px;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-        border-top: 20px solid green;
-        border-right: 20px solid black;
-        background: red;
+        border: 15px solid;
+        border-width: 8px 8px 15px 15px;
+        border-color: var(--header-bg-color) var(--header-bg-color) transparent transparent;
     }
 
-    .nav-list li {
+    ul.nav-list li {
         margin-left: 0;
         opacity: 0;
     }
 
-    .mobile-menu {
+    div.mobile-menu {
         display: block;
     }
 }
