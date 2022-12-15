@@ -1,0 +1,53 @@
+/* Estilização da section start do site https://julio-souza.vercel.app/ */
+
+.start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 92vh;
+    position: relative;
+    background: var(--black-color);
+}
+
+.start-left {
+    max-width: 50vw;
+    margin: 3rem 0 5rem;
+}
+
+.start-left span {
+    color: var(--green-color);
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.start-left h1 {
+    color: var(--white-color);
+    opacity: 0.8;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+div.btn-linkedin {
+    margin-left: 50px;
+    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, #0A66C2, var(--green-lite-color)) border-box;
+}
+
+.start-right {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin: 2rem 0;
+}
+
+.start-right img {
+    max-width: 25rem;
+}
