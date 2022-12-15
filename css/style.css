@@ -31,10 +31,6 @@ a {
     transition: 0.5s;
 }
 
-main {
-    
-}
-
 .start, .sobre-mim, .meus-projetos, .entre-em-contato {
     padding: 7% 4% 7% 7%;
 }
@@ -85,20 +81,6 @@ main {
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-out;
-    }
-
-    .nav-list::before {
-        content: "";
-        top: -20px;
-        left: -65px;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 41%;
-        border: 15px solid;
-        border-width: 20px 20px 35px 35px;
-        border-color: var(--header-bg-color) var(--header-bg-color) transparent transparent;
-        z-index: 0;
     }
 
     .nav-list li {
