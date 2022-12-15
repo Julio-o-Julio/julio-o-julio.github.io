@@ -80,45 +80,6 @@ div.mobile-menu.active .line-3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-main {
-    background: url("background.jpg") no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    z-index: -1;
-}
-
-section.principal {
-    width: 100vw;
-    height: 92vh;
-    background: rgba(255, 0, 0, 0.2);
-}
-
-section.principal-left {
-    background-color: aqua;
-}
-
-section.principal-right {
-    background-color: blue;
-}
-
-section.sobre-mim {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 255, 0, 0.2);
-}
-
-section.meus-projetos {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 255, 0.2);
-}
-
-section.entre-em-contato {
-    width: 100vw;
-    height: 100vh;
-    background: rgba(255, 0, 255, 0.2);
-}
-
 @media (max-width: 600px) {
     ul.nav-list {
         position: absolute;
