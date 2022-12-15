@@ -1,0 +1,7 @@
+/* Estilização da section sobre-mim do site https://julio-souza.vercel.app/ */
+
+.sobre-mim {
+    width: 100vw;
+    height: 92vh;
+    background: rgba(0, 255, 0, 0.2);
+}
