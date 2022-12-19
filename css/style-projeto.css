@@ -1,0 +1,8 @@
+/* Estilização da section projetos do site https://julio-souza.vercel.app/ */
+
+.meus-projetos {
+    width: 100vw;
+    height: 90vh;
+    background: rgba(0, 0, 255, 0.2);
+}
+

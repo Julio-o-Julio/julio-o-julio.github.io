@@ -1,0 +1,75 @@
+/* Estilização da section inicio do site https://julio-souza.vercel.app/ */
+
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: var(--black-color);
+}
+
+.inicio-left {
+    width: 45%;
+    margin: 3rem 0 5rem;
+}
+
+.typing {
+    color: var(--green-color);
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.cursor {
+    width: 3px;
+    height: 4vw;
+    top: 3px;
+    display: inline-block;
+    position: relative;
+    background-color: var(--white-color);
+    animation: cursor 0.5s infinite alternate;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.inicio-left h1 {
+    color: var(--white-color);
+    opacity: 0.8;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10%;
+    margin-top: 30px;
+}
+
+.inicio-right {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    margin: 2rem 0;
+}
+
+.inicio-right img {
+    width: 100%;
+}

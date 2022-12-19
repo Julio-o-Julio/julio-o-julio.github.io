@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
 @import url('style-header.css');
-@import url('style-start.css');
-@import url('style-sobre-mim.css');
+@import url('style-inicio.css');
+@import url('style-sobre.css');
+@import url('style-projeto.css');
+@import url('style-contato.css');
 
 :root {
-    --header-bg-color: #121212;
     --white-color: #FFF;
     --black-color: #121214;
     --green-color: #00EC00;
     --green-cc-color: #00EC00CC;
     --green-midium-color: #36d136;
     --green-lite-color: #5eff5e;
+    --blue-color: #0A66C2;
 }
 
 * {
@@ -31,8 +33,12 @@ a {
     transition: 0.5s;
 }
 
-.start, .sobre-mim, .meus-projetos, .entre-em-contato {
-    padding: 7% 4% 7% 7%;
+.inicio, .sobre-mim, .meus-projetos, .entre-em-contato {
+    padding: 5% 10% 7%;
+}
+
+.btn img {
+    width: 22px;
 }
 
 .btn {
@@ -42,29 +48,24 @@ a {
     padding: 5px;
     width: 140px;
     height: 50px;
-    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, var(--green-lite-color), var(--green-midium-color), var(--green-color)) border-box;
     border-radius: 8px;
     border: 2px solid transparent;
 }
 
-.btn:hover {
+.btn-green {
+    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, var(--green-lite-color), var(--green-midium-color), var(--green-color)) border-box;
+}
+
+.btn-green:hover {
     background: linear-gradient(rgb(35, 35, 35), rgb(35, 35, 35)) padding-box, linear-gradient(-35deg, var(--green-lite-color), var(--green-midium-color), var(--green-color)) border-box;
 }
 
-.btn img {
-    width: 22px;
+.btn-blue {
+    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, var(--blue-color), var(--green-lite-color)) border-box;
 }
 
-.meus-projetos {
-    width: 100vw;
-    height: 92vh;
-    background: rgba(0, 0, 255, 0.2);
-}
-
-.entre-em-contato {
-    width: 100vw;
-    height: 92vh;
-    background: rgba(255, 0, 255, 0.2);
+.btn-blue:hover {
+    background: linear-gradient(rgb(35, 35, 35), rgb(35, 35, 35)) padding-box, linear-gradient(-35deg, var(--blue-color), var(--green-lite-color)) border-box;
 }
 
 @media (max-width: 600px) {
@@ -81,20 +82,6 @@ a {
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-out;
-    }
-
-    .nav-list::before {
-        content: "";
-        top: -20px;
-        left: -65px;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 41%;
-        border: 15px solid;
-        border-width: 20px 20px 35px 35px;
-        border-color: var(--header-bg-color) var(--header-bg-color) transparent transparent;
-        z-index: 0;
     }
 
     .nav-list li {
