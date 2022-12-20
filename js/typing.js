@@ -7,7 +7,7 @@ function typing (text, count) {
             span.textContent += text.charAt(count);
             count++;
             typing (text, count);
-        }, 160)
+        }, 200)
     }
 }
 
