@@ -52,12 +52,8 @@ a {
     transition: 0.5s;
 }
 
-.inicio, .sobre-mim, .meus-projetos, .entre-em-contato {
-    padding: 5% 10% 8% 11%;
-}
-
-.btn img {
-    width: 22px;
+.meus-projetos, .entre-em-contato {
+    
 }
 
 .btn {
@@ -69,6 +65,10 @@ a {
     height: 50px;
     border-radius: 8px;
     border: 2px solid transparent;
+}
+
+.btn img {
+    width: 22px;
 }
 
 .btn-green {
