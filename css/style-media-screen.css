@@ -159,6 +159,11 @@
     .meus-projetos {
         padding-top: 12%;
     }
+
+    /* Contato */
+    .entre-em-contato {
+        padding: 8%;
+    }
 }
 
 @media (max-width: 563px) {
@@ -216,6 +221,11 @@
     .projeto a {
         margin: 0 auto;
     }
+
+    /* Contato */
+    .entre-em-contato {
+        padding: 8% 8%;
+    }
 }
 
 @media (max-width: 505px) {
@@ -266,6 +276,9 @@
     }
 
     /* Contato */
+    .entre-em-contato {
+        padding: 10% 8%;
+    }
     .form-email h2 {
         text-align: center;
         font-size: 5vw;
@@ -321,6 +334,9 @@
     }
 
     /* Contato */
+    .entre-em-contato {
+        padding: 12% 8%;
+    }
     .span-form {
         font-size: 4vw;
     }
