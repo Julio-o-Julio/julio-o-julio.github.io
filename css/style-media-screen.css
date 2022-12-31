@@ -87,15 +87,7 @@
     }
 
     /* Ondas */
-    .waves {
-        top: 90vh;
-        height: 40px;
-        min-height: 40px;
-    }
     
-    .content {
-        height: 30vh;
-    }
 
     /* Contato */
     .contato {
@@ -107,6 +99,10 @@
 }
 
 @media (max-width: 645px) {
+    /* Inicio */
+    .inicio {
+        padding: 5% 6% 8% 8%;
+    }
     .inicio-left {
         gap: 10px;
         width: 80%;
@@ -120,6 +116,26 @@
     .cursor {
         height: 8vw;
     }
+    
+    /* Sobre */
+    .sobre-mim {
+        padding-top: 12%;
+    }
+    .cards {
+        padding-top: 3%;
+        gap: 35px;
+    }
+    .card {
+        width: 75%;
+    }
+
+    /* Projetos */
+    .meus-projetos {
+        padding-top: 8%;
+    }
+    .projetos {
+        grid-template-columns: 100%;
+    }
 }
 
 @media (max-width: 563px) {
@@ -130,9 +146,40 @@
         gap: 15px;
         width: 90%;
     }
+
+    /* Sobre */
+    .sobre-mim {
+        padding-top: 13%;
+    }
+    .sobre-mim p {
+        text-indent: 0;
+        text-align: center;
+    }
+    .cards {
+        padding-top: 3%;
+        gap: 35px;
+    }
+    .card {
+        width: 75%;
+    }
+
+    /* Projetos */
+    .meus-projetos {
+        padding-top: 8%;
+    }
+    .projeto h2 {
+        margin: 0 auto;
+    }
+    .projeto p {
+        text-indent: 0;
+        text-align: center;
+    }
+    .projeto a {
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 502px) {
+@media (max-width: 505px) {
     .nav-list li {
         font-size: 4.5vw;
     }
@@ -147,5 +194,72 @@
     }
     .cursor {
         height: 9vw;
+    }
+
+    /* Sobre */
+    .sobre-mim {
+        padding-top: 18%;
+    }
+    .cards {
+        padding-top: 3%;
+        gap: 35px;
+    }
+    .card {
+        width: 75%;
+    }
+
+    /* Projetos */
+    .meus-projetos {
+        padding-top: 8%;
+    }
+
+    /* Contato */
+    .form-email h2 {
+        text-align: center;
+        font-size: 5vw;
+    }
+    .form-email h3 {
+        text-align: center;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-list li {
+        font-size: 4.5vw;
+    }
+    .inicio-left {
+        width: 95%;
+    }
+    .inicio-left h1 {
+        font-size: 4vw;
+    }
+    .typing {
+        font-size: 10vw;
+    }
+    .cursor {
+        height: 9vw;
+    }
+
+    /* Sobre */
+    .sobre-mim {
+        padding-top: 18%;
+    }
+    .cards {
+        padding-top: 3%;
+        gap: 35px;
+    }
+    .card {
+        width: 75%;
+    }
+
+    /* Projetos */
+    .meus-projetos {
+        padding-top: 8%;
+    }
+
+    /* Contato */
+    .span-form {
+        font-size: 4vw;
     }
 }
