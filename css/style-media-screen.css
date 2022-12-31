@@ -97,9 +97,17 @@
         display: none;
     }
 
+    /* Sobre */
+    .card {
+        pointer-events: none;
+    }
+
     /* Projeto */
     .meus-projetos {
         padding-top: 10%;
+    }
+    .meus-projetos img {
+        pointer-events: none;
     }
     .titulo {
         margin-bottom: 20px;
