@@ -4,16 +4,7 @@
 @import url('style-sobre.css');
 @import url('style-projetos.css');
 @import url('style-contato.css');
-
-:root {
-    --white-color: #FFF;
-    --black-color: #121214;
-    --green-color: #00EC00;
-    --green-cc-color: #00EC00CC;
-    --green-midium-color: #36d136;
-    --green-lite-color: #5eff5e;
-    --blue-color: #0A66C2;
-}
+@import url('style-media-screen.css');
 
 * {
     margin: 0;
@@ -25,7 +16,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     html {
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
 }
 
@@ -38,22 +29,28 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--black-color);        
+    background: #121214;        
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--green-color);
+    background-color: #00EC00;
     border-radius: 50px;
 }
 
 a {
-    color: var(--white-color);
+    color: #FFF;
     text-decoration: none;
-    transition: 0.5s;
 }
 
-.meus-projetos, .entre-em-contato {
-    
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -72,114 +69,39 @@ a {
 }
 
 .btn-green {
-    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, var(--green-lite-color), var(--green-midium-color), var(--green-color)) border-box;
+    background: linear-gradient(#121214, #121214) padding-box, linear-gradient(-35deg, #5eff5e, #36d136, #00EC00) border-box;
 }
 
 .btn-green:hover {
-    background: linear-gradient(rgb(35, 35, 35), rgb(35, 35, 35)) padding-box, linear-gradient(-35deg, var(--green-lite-color), var(--green-midium-color), var(--green-color)) border-box;
+    background: linear-gradient(#232323, #232323) padding-box, linear-gradient(-35deg, #5eff5e, #36d136, #00EC00) border-box;
 }
 
 .btn-blue {
-    background: linear-gradient(var(--black-color), var(--black-color)) padding-box, linear-gradient(-35deg, var(--blue-color), var(--green-lite-color)) border-box;
+    background: linear-gradient(#121214, #121214) padding-box, linear-gradient(-35deg, #0A66C2, #5eff5e) border-box;
 }
 
 .btn-blue:hover {
-    background: linear-gradient(rgb(35, 35, 35), rgb(35, 35, 35)) padding-box, linear-gradient(-35deg, var(--blue-color), var(--green-lite-color)) border-box;
+    background: linear-gradient(rgb(35, 35, 35), rgb(35, 35, 35)) padding-box, linear-gradient(-35deg, #0A66C2, #5eff5e) border-box;
 }
 
-.waves {
+.shape {
     position: absolute;
-    top: 80vh;
-    width: 100%;
-    height: 15vh;
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 150px;
+    width: 22%;
+    height: 75%;
+    z-index: 0;
 }
 
-.parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+.shape-left {
+    left: 0;
+    border-radius: 0 12vw;
+    background-image: linear-gradient(120deg, #00EC00, #0A66C2);
 }
 
-.parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
+.shape-right {
+    height: 50%;
+    right: 0;
+    border-radius: 12vw 0;
+    background-image: linear-gradient(-120deg, #00EC00, #0A66C2);
+    margin-top: 25%;
 }
 
-.parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-
-.parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-
-.parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-}
-
-@keyframes move-forever {
-    0% {
-    transform: translate3d(-90px,0,0);
-    }
-    100% { 
-    transform: translate3d(85px,0,0);
-    }
-}
-
-@media (max-width: 768px) {
-    .waves {
-    height:40px;
-    min-height:40px;
-    }
-    .content {
-    height:30vh;
-    }
-    h1 {
-    font-size:24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-list {
-        position: absolute;
-        top: 8vh;
-        border-radius: 0 0 0 15px;
-        padding: 2rem 0 3rem;
-        right: 0;
-        width: 45vw;
-        height: fit-content;
-        background: var(--header-bg-color);
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-out;
-    }
-
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
