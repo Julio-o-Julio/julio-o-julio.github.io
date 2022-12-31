@@ -1,6 +1,10 @@
 /* Estilização da responsividade do site https://julio-souza.vercel.app/ */
 
 @media (max-width: 1024px) {
+    div.shape-right {
+        margin-top: 35%;
+    }
+
     /* Inicio */
     .inicio {
         padding: 5% 6% 8% 8%;
@@ -25,6 +29,13 @@
 }
 
 @media (max-width: 768px) {
+    div.shape {
+        width: 30%;
+    }
+    div.shape-right {
+        margin-top: 45%;
+    }
+
     /* Header */
     .nav-list {
         position: absolute;
@@ -86,8 +97,16 @@
         display: none;
     }
 
-    /* Ondas */
-    
+    /* Projeto */
+    .meus-projetos {
+        padding-top: 10%;
+    }
+    .titulo {
+        margin-bottom: 20px;
+    }
+    .projetos {
+        grid-template-columns: 100%;
+    }
 
     /* Contato */
     .contato {
@@ -99,6 +118,13 @@
 }
 
 @media (max-width: 645px) {
+    div.shape {
+        width: 35%;
+    }
+    div.shape-right {
+        margin-top: 55%;
+    }
+
     /* Inicio */
     .inicio {
         padding: 5% 6% 8% 8%;
@@ -126,22 +152,29 @@
         gap: 35px;
     }
     .card {
-        width: 75%;
+        width: 80%;
     }
 
     /* Projetos */
     .meus-projetos {
-        padding-top: 8%;
-    }
-    .projetos {
-        grid-template-columns: 100%;
+        padding-top: 12%;
     }
 }
 
 @media (max-width: 563px) {
+    div.shape {
+        width: 40%;
+    }
+    div.shape-right {
+        margin-top: 65%;
+    }
+
+    /* Header */
     .nav-list li {
         font-size: 4vw;
     }
+
+    /* Inicio */
     .inicio-left {
         gap: 15px;
         width: 90%;
@@ -160,12 +193,15 @@
         gap: 35px;
     }
     .card {
-        width: 75%;
+        width: 85%;
     }
 
     /* Projetos */
     .meus-projetos {
-        padding-top: 8%;
+        padding-top: 14%;
+    }
+    .titulo {
+        margin-bottom: 25px;
     }
     .projeto h2 {
         margin: 0 auto;
@@ -174,15 +210,28 @@
         text-indent: 0;
         text-align: center;
     }
+    .text-tecnologias {
+        margin: 2px auto;
+    }
     .projeto a {
         margin: 0 auto;
     }
 }
 
 @media (max-width: 505px) {
+    div.shape {
+        width: 50%;
+    }
+    div.shape-right {
+        margin-top: 75%;
+    }
+
+    /* Header */
     .nav-list li {
         font-size: 4.5vw;
     }
+
+    /* Inicio */
     .inicio-left {
         width: 95%;
     }
@@ -198,19 +247,22 @@
 
     /* Sobre */
     .sobre-mim {
-        padding-top: 18%;
+        padding-top: 16%;
     }
     .cards {
         padding-top: 3%;
         gap: 35px;
     }
     .card {
-        width: 75%;
+        width: 90%;
     }
 
     /* Projetos */
     .meus-projetos {
-        padding-top: 8%;
+        padding-top: 14%;
+    }
+    .titulo {
+        margin-bottom: 20px;
     }
 
     /* Contato */
@@ -225,9 +277,19 @@
 }
 
 @media (max-width: 400px) {
+    div.shape {
+        width: 50%;
+    }
+    div.shape-right {
+        margin-top: 85%;
+    }
+
+    /* Header */
     .nav-list li {
         font-size: 4.5vw;
     }
+
+    /* Inicio */
     .inicio-left {
         width: 95%;
     }
@@ -250,12 +312,12 @@
         gap: 35px;
     }
     .card {
-        width: 75%;
+        width: 95%;
     }
 
     /* Projetos */
     .meus-projetos {
-        padding-top: 8%;
+        padding-top: 18%;
     }
 
     /* Contato */
