@@ -27,9 +27,9 @@ header {
 }
 
 .background {
-    background: rgba(18, 18, 18, 0.5);
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
 }
 
 .data-menu {

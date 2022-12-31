@@ -26,11 +26,6 @@
 
 @media (max-width: 768px) {
     /* Header */
-    .background {
-        background: rgba(18, 18, 18, 1);
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-    }
     .nav-list {
         position: absolute;
         top: 10vh;
@@ -39,15 +34,19 @@
         right: 0;
         width: 45vw;
         height: fit-content;
-        background: #121214;
+        background: rgba(18, 18, 18, 0.8);
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-out;
+        z-index: 1;
     }
     .nav-list li {
         margin-left: 0;
         opacity: 0;
+        font-size: 3vw;
     }
     .mobile-menu {
         display: block;
@@ -55,7 +54,36 @@
 
     /* Section inicio */
     .inicio {
-        padding: 5% 0% 8%;
+        padding: 0;
+    }
+    .inicio-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+    }
+    .inicio-left h1 {
+        font-size: 3vw;
+    }
+    .typing {
+        margin-left: 10px;
+        font-size: 8vw;
+    }
+    .cursor {
+        height: 7vw;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 15%;
+    }
+    .inicio-right {
+        display: none;
     }
 
     /* Ondas */
@@ -67,5 +95,57 @@
     
     .content {
         height: 30vh;
+    }
+
+    /* Contato */
+    .contato {
+        grid-template-columns: 100%;
+    }
+    .contato img {
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+    .inicio-left {
+        gap: 10px;
+        width: 80%;
+    }
+    .inicio-left h1 {
+        font-size: 4vw;
+    }
+    .typing {
+        font-size: 10vw;
+    }
+    .cursor {
+        height: 8vw;
+    }
+}
+
+@media (max-width: 563px) {
+    .nav-list li {
+        font-size: 4vw;
+    }
+    .inicio-left {
+        gap: 15px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 502px) {
+    .nav-list li {
+        font-size: 4.5vw;
+    }
+    .inicio-left {
+        width: 95%;
+    }
+    .inicio-left h1 {
+        font-size: 4vw;
+    }
+    .typing {
+        font-size: 10vw;
+    }
+    .cursor {
+        height: 9vw;
     }
 }
