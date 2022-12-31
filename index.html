@@ -8,11 +8,12 @@
     <meta name="description" content="Portfólio do Desenvolvedor back-end Julio Souza">
     <meta name="keywords" content="portfolio, html, css, desenvolvedor, back-end, javascript">
     <title>Julio Souza</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/hacker.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
+        <div class="background data-menu"></div>
         <nav class="data-menu">
             <a class="logo" href="/"><b>&lt;</b>Dev<b class="ponto">.</b>JS<b>/&gt;</b></a>
             <div class="mobile-menu">
@@ -24,6 +25,7 @@
                 <li><a href="#inicio"><div>Início</div></a></li>
                 <li><a href="#sobre"><div>Sobre</div></a></li>
                 <li><a href="#projetos"><div>Projetos</div></a></li>
+                <!-- <li><a href="#certificacoes"><div>Certificações</div></a></li> -->
                 <li><a href="#contato"><div>Contato</div></a></li>
             </ul>
         </nav>
@@ -68,26 +70,86 @@
             </svg>
         </div>
         <section class="sobre-mim" id="sobre">
+            <div class="shape shape-left"></div>
             <div class="cards">
                 <div class="card">
                     <h2>Sobre mim</h2>
-                    <p>Sou estudante de Engenharia de Software, possuo experiência em Desenvolvimento Web Back-end, construo aplicações com foco em JavaScript e Python com os Frameworks Node.js e Django. No momento trabalho em projetos pessoais para adquirir experiência e prática em resolução de problemas e pensamento lógico além de praticar as linguagens de programação e os Frameworks mencionados anteriormente.</p>
+                    <p>Me chamo Julio Souza e sou estudante de Engenharia de Software pela UFMS, moro atualmente em Campo Grande MS e estou em busca de uma posição no mercado. Possuo experiência em Desenvolvimento Web Back-end, construo aplicações com foco em JavaScript e Python com o Framework Django. No momento atuo em projetos pessoais para adquirir experiência e prática em resolução de problemas e pensamento lógico além de praticar as linguagens de programação e o Framework mencionado acima.</p>
                 </div>
                 <div class="card">
                     <h2>Experiência acadêmica</h2>
-                    <p>Na faculdade conseguimos uma base teórica em resolução de problemas e lógica de programação e colocamos em prática usando as linguagens de programação Python, C e Java. E com isso possuo experiência acadêmica em: Linguagens de baixo e alto nível, manipulação de banco de dados, versionamento de código e trabalho em equipe.</p>
+                    <p>Na faculdade adiquiri base teórica em resolução de problemas e lógica de programação, coloco em prática usando as linguagens de programação Python; C e Java. Com isso tenho domínio em: Linguagens de baixo e alto nível; manipulação de banco de dados e versionamento de código.</p>
                 </div>
                 <div class="card">
                     <h2>Estudando</h2>
-                    <p>Estou me aprofundando em JavaScript, Node.js, API e banco de dados. Porque ter uma base forte em pelo menos uma linguagem de programação, um framework e saber como extrair dados de uma API e saber manipular um banco de dados é primordial para ser um Desenvolvedor Back-end.</p>
+                    <p>Estou me aperfeiçoando em JavaScript, Django, APIRest e banco de dados. Pois ter uma base forte em pelo menos uma linguagem de programação; Um framework; extrair dados de uma API e manipular um banco de dados é primordial para ser um Desenvolvedor Back-end.</p>
                 </div>
             </div>
         </section>
         <section class="meus-projetos" id="projetos">
-
+            <div class="shape shape-right"></div>
+            <p class="titulo">Projetos</p>
+            <div class="projetos">
+                <div class="projeto">
+                    <img src="./img/img.png" alt="Imagem">
+                    <h2>Calculadora</h2>
+                    <p class="text-description">Desenvolvi uma calculadora com o Back-end feito inteiramente em JavaScript para praticar a implementação das principais operações aritméticas da linguagem.</p>
+                    <p class="text-tecnologias">Tecnologias usadas: HTML5, CSS3 e JavaScript.</p>
+                    <a href="#"><div class="btn btn-green">Visualizar</div></a>
+                </div>
+                <div class="projeto">
+                    <img src="./img/img.png" alt="Imagem">
+                    <h2>Em breve...</h2>
+                    <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas provident, reprehenderit placeat, minus sit optio cupiditate possimus blanditiis hic exercitationem nisi aliquid vero libero tempore mollitia aut quaerat accusamus et?</p>
+                    <p class="text-tecnologias">Tecnologias usadas: HTML5, CSS3, JavaScript e Vanilla.</p>
+                    <a href="#"><div class="btn btn-blue">Visualizar</div></a>
+                </div>
+                <div class="projeto">
+                    <img src="./img/img.png" alt="Imagem">
+                    <h2>Em breve...</h2>
+                    <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum porro laboriosam ipsum deleniti, nostrum dolore iusto nisi ratione dolorum aperiam quisquam mollitia inventore, reprehenderit ipsa quaerat veniam laborum id hic?</p>
+                    <p class="text-tecnologias">Tecnologias usadas: HTML5, CSS3, JavaScript e Vanilla.</p>
+                    <a href="#"><div class="btn btn-green">Visualizar</div></a>
+                </div>
+                <div class="projeto">
+                    <img src="./img/img.png" alt="Imagem">
+                    <h2>Em breve...</h2>
+                    <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cumque, optio temporibus maiores autem molestiae quasi, dicta recusandae animi veritatis eum? Consectetur temporibus voluptas aperiam eius minima in natus atque!</p>
+                    <p class="text-tecnologias">Tecnologias usadas: HTML5, CSS3, JavaScript e Vanilla.</p>
+                    <a href="#"><div class="btn btn-blue">Visualizar</div></a>
+                </div>
+            </div>
         </section>
         <section class="entre-em-contato" id="contato">
-            
+            <section class="contato">
+                <img src="./img/emails.svg" alt="Imagem SVG" data-tilt>
+                <form action="https://api.staticforms.xyz/submit" method="post" class="form-email" autocomplete="off">
+
+                    <h2>Gostou do meu trabalho?</h2>
+                    <h3>Entre em contato comigo!</h3>
+                    
+                    <input type="hidden" name="accessKey" value="5fe292f9-7932-4300-a7db-6bad5654726a">
+                    <input type="hidden" name="redirectTo" value="https://julio-souza.vercel.app/#contato">
+
+                    <div class="input-box nome column">
+                        <input class="input-form" type="text" name="name" maxlength="30" minlength="2" required>
+                        <span class="span-form" for="inputNome">Nome*</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box email column">
+                        <input class="input-form" type="email" name="email" id="inputEmail" maxlength="50" required>
+                        <span class="span-form" for="inputEmail">Endereço de Email*</span>
+                        <i></i>
+                    </div>
+                    <div class="input-box menssagem column">
+                        <textarea class="input-form textarea-form" name="message" id="textAreaMensagem" cols="30" rows="10" maxlength="256" required></textarea>
+                        <span class="span-form" for="textMenssagem">Mensagem*</span>
+                        <i></i>
+                    </div>
+
+                    <button class="btn btn-blue">Enviar</button>
+                </form>
+            </section>
         </section>
     </main>
     <script type="text/javascript" src="./js/mobile-navbar.js"></script>
