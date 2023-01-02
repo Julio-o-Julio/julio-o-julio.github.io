@@ -1,8 +1,8 @@
 /* Estilização da responsividade do site https://julio-souza.vercel.app/ */
 
 @media (max-width: 1024px) {
-    div.shape-right {
-        margin-top: 35%;
+    .shape-right {
+        margin-top: 35% !important;
     }
 
     /* Inicio */
@@ -29,11 +29,11 @@
 }
 
 @media (max-width: 768px) {
-    div.shape {
-        width: 30%;
+    .shape {
+        width: 30% !important;
     }
-    div.shape-right {
-        margin-top: 45%;
+    .shape-right {
+        margin-top: 45% !important;
     }
 
     /* Header */
@@ -126,11 +126,11 @@
 }
 
 @media (max-width: 645px) {
-    div.shape {
-        width: 35%;
+    .shape {
+        width: 35% !important;
     }
-    div.shape-right {
-        margin-top: 55%;
+    .shape-right {
+        margin-top: 55% !important;
     }
 
     /* Inicio */
@@ -175,11 +175,11 @@
 }
 
 @media (max-width: 563px) {
-    div.shape {
-        width: 40%;
+    .shape {
+        width: 40% !important;
     }
-    div.shape-right {
-        margin-top: 65%;
+    .shape-right {
+        margin-top: 65% !important;
     }
 
     /* Header */
@@ -237,11 +237,11 @@
 }
 
 @media (max-width: 505px) {
-    div.shape {
-        width: 50%;
+    .shape {
+        width: 50% !important;
     }
-    div.shape-right {
-        margin-top: 75%;
+    .shape-right {
+        margin-top: 75% !important;
     }
 
     /* Header */
@@ -298,11 +298,11 @@
 }
 
 @media (max-width: 400px) {
-    div.shape {
-        width: 50%;
+    .shape {
+        width: 50% !important;
     }
-    div.shape-right {
-        margin-top: 85%;
+    .shape-right {
+        margin-top: 85% !important;
     }
 
     /* Header */
